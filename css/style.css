@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    background-color: #FDF7ED;
+     font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+header{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    height: 80px;
+    box-shadow: 0 6px 18px rgba(2,8,23,0.06);
+    z-index: 1;
+}
+
+
+nav{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo img{
+    width: 60px;
+    height: auto;
+    width: 72px;
+}
+
+nav a{
+   text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.logo h2 {
+    margin: 0;
+    margin-left: 8px;
+    color: #000000;
+        font-size: 20px;
+    font-weight: 600;
+}
+
+.cta-container {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+
+.btn--whatsapp {
+    background: #25D366;
+    color: #fff;
+}
+.btn--whatsapp:hover {
+    background: #1ebe5d;
+}
+
+
+.btn--quote {
+    background: #FFD400;
+    color: #333;
+}
+.btn--quote:hover {
+    background: #e6c300;
+}
