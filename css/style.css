@@ -222,6 +222,326 @@ nav a:hover::after {
 
 /*estilos del formulario de contacto*/
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+}
+
+/* Sección de contacto */
+.contact-section {
+  position: relative;
+  padding: 96px 0;
+  background-color: #2E7D32;
+  overflow: hidden;
+}
+
+/* Patrón de fondo */
+.background-pattern {
+  position: absolute;
+  inset: 0;
+  opacity: 0.1;
+  background: #1ebe5d;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 10;
+}
+
+/* Encabezado de sección */
+.section-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #FFD700;
+  color: #1a1a1a;
+  border-radius: 9999px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.section-header h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.section-header p {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 672px;
+  margin: 0 auto;
+}
+
+/* Grid de contacto */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+}
+
+@media (min-width: 1024px) {
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Formulario de contacto */
+.contact-form-container {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  padding: 48px;
+  height: 680px;
+}
+
+.contact-form-container h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 24px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 0.875rem;
+  color: #4a5568;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #2E7D32;
+}
+
+.form-group textarea {
+  resize: none;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 16px 24px;
+  background-color: #2E7D32;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #1B5E20;
+  transform: scale(1.02);
+}
+
+.submit-btn:active {
+  transform: scale(0.98);
+}
+
+.icon {
+  flex-shrink: 0;
+}
+
+/* Información de contacto */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.info-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.info-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 24px;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.3s, transform 0.2s;
+}
+
+.info-card:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  transform: scale(1.02);
+}
+
+.icon-box {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.whatsapp-icon {
+  background-color: #25D366;
+  color: white;
+}
+
+.phone-icon {
+  background-color: #FFD700;
+  color: #1a1a1a;
+}
+
+.email-icon {
+  background-color: #2E7D32;
+  color: white;
+}
+
+.location-icon {
+  background-color: #8D6E63;
+  color: white;
+}
+
+.info-text {
+  flex: 1;
+}
+
+.info-label {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.info-value {
+  font-weight: 700;
+  color: #1a1a1a;
+  font-size: 1rem;
+}
+
+.info-address {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+/* Redes sociales */
+.social-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.social-card h4 {
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
+}
+
+.social-btn {
+  width: 48px;
+  height: 48px;
+  background-color: #F1F8E9;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2E7D32;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.social-btn:hover {
+  background-color: #2E7D32;
+  color: white;
+  transform: scale(1.1);
+}
+
+.social-btn:active {
+  transform: scale(0.9);
+}
+
+/* Mapa */
+.map-container {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  height: 256px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .section-header h2 {
+    font-size: 2.5rem;
+  }
+  
+  .contact-form-container {
+    padding: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 64px 0;
+  }
+  
+  .section-header h2 {
+    font-size: 2rem;
+  }
+  
+  .contact-form-container {
+    padding: 24px;
+  }
+}
 
 /*estilos del footer*/
 
@@ -325,7 +645,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: black;
   text-decoration: none;
   transition: all 0.3s;
 }

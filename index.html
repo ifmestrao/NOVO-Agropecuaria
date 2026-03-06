@@ -55,6 +55,157 @@
         </div>
     </section>
 
+    <!-- contacto  -->
+
+     <section id="contacto" class="contact-section">
+    <!-- Patrón de fondo -->
+    <div class="background-pattern"></div>
+
+    <div class="container">
+      <!-- Encabezado -->
+      <div class="section-header">
+        <div class="badge">
+          <span>Estamos aquí para ti</span>
+        </div>
+        <h2>Contáctanos Hoy</h2>
+        <p>¿Tienes preguntas sobre nuestros productos? Estamos listos para ayudarte</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Formulario de contacto -->
+        <div class="contact-form-container">
+          <h3>Envíanos un mensaje</h3>
+          
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Nombre completo</label>
+              <input type="text" id="name" name="name" placeholder="Nombres" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" placeholder="usuario@gmail.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Teléfono</label>
+              <input type="tel" id="phone" name="phone" placeholder="+57 300 123 4567" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message" rows="5" placeholder="Cuéntanos sobre tus necesidades..." required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">
+              <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+              Enviar Mensaje
+            </button>
+          </form>
+        </div>
+
+        <!-- Información de contacto -->
+        <div class="contact-info">
+          <!-- Tarjetas de contacto -->
+          <div class="info-cards">
+            <a href="https://wa.me/573001234567" target="_blank" class="info-card whatsapp-card">
+              <div class="icon-box whatsapp-icon">
+                <svg class="icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </div>
+              <div class="info-text">
+                <div class="info-label">WhatsApp</div>
+                <div class="info-value">+57 300 123 4567</div>
+              </div>
+            </a>
+
+            <a href="tel:+573001234567" class="info-card">
+              <div class="icon-box phone-icon">
+                <svg class="icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="info-text">
+                <div class="info-label">Teléfono</div>
+                <div class="info-value">+57 300 123 4567</div>
+              </div>
+            </a>
+
+            <a href="mailto:info@agrofinca.co" class="info-card">
+              <div class="icon-box email-icon">
+                <svg class="icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="info-text">
+                <div class="info-label">Email</div>
+                <div class="info-value">contacto@novoagropecuaria.co</div>
+              </div>
+            </a>
+
+            <div class="info-card">
+              <div class="icon-box location-icon">
+                <svg class="icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="info-text">
+                <div class="info-label">Ubicación</div>
+                <div class="info-value">Córdoba, Colombia</div>
+                <div class="info-address">Calle, Zona </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Redes sociales -->
+          <div class="social-card">
+            <h4>Síguenos en redes sociales</h4>
+            <div class="social-links">
+              <a href="#" class="social-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </a>
+              <a href="#" class="social-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <a href="#" class="social-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Mapa -->
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d251447.0985741!2d-75.8813!3d8.7479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e5a2fe42dbfffff%3A0x92dfb5faaaaaaa!2sMontería%2C%20Córdoba%2C%20Colombia!5e0!3m2!1ses!2sco!4v1234567890"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Ubicación NovoAgropecuaria">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
     <!-- footer  -->
